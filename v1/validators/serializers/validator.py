@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from thenewboston.utils.fields import all_field_names
+from leapchain.utils.fields import all_field_names
 
 from v1.tasks import sync
 from ..models.validator import Validator

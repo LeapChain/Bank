@@ -2,9 +2,9 @@ import logging
 
 from django.db import transaction
 from rest_framework import serializers
-from thenewboston.constants.network import SIGNATURE_LENGTH, VERIFY_KEY_LENGTH
-from thenewboston.serializers.confirmation_block_message import ConfirmationBlockMessageSerializer
-from thenewboston.utils.fields import all_field_names
+from leapchain.constants.network import SIGNATURE_LENGTH, VERIFY_KEY_LENGTH
+from leapchain.serializers.confirmation_block_message import ConfirmationBlockMessageSerializer
+from leapchain.utils.fields import all_field_names
 
 from v1.blocks.models.block import Block
 from v1.notifications.confirmation_blocks import send_confirmation_block_notifications
@@ -12,7 +12,7 @@ from v1.utils.blocks import create_block_and_related_objects
 from v1.validators.models.validator import Validator
 from ..models.confirmation_block import ConfirmationBlock
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 class ConfirmationBlockSerializer(serializers.ModelSerializer):

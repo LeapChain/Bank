@@ -1,4 +1,4 @@
-from thenewboston.utils.fields import standard_field_names
+from leapchain.utils.fields import standard_field_names
 
 from v1.banks.models.bank import Bank
 from v1.self_configurations.helpers.self_configuration import get_self_configuration

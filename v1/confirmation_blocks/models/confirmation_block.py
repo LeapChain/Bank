@@ -1,8 +1,8 @@
 from uuid import uuid4
 
 from django.db import models
-from thenewboston.constants.network import BLOCK_IDENTIFIER_LENGTH
-from thenewboston.models.created_modified import CreatedModified
+from leapchain.constants.network import BLOCK_IDENTIFIER_LENGTH
+from leapchain.models.created_modified import CreatedModified
 
 from v1.blocks.models.block import Block
 from v1.validators.models.validator import Validator

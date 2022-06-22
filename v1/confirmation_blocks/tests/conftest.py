@@ -1,5 +1,5 @@
 import pytest
-from thenewboston.third_party.factory.utils import build_json
+from leapchain.third_party.factory.utils import build_json
 from thenewboston.utils.signed_requests import generate_signed_request
 
 from ..factories.confirmation_block import ConfirmationBlockFactory
