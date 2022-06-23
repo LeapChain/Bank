@@ -152,7 +152,7 @@ LOGGING = {
         },
     },
     'loggers': {
-        'thenewboston': {
+        'leapchain': {
             'handlers': ['error.handler', 'warning.handler'],
             'level': 'WARNING',
             'propagate': True,

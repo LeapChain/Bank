@@ -1,8 +1,8 @@
 from uuid import uuid4
 
 from django.db import models
-from thenewboston.constants.network import BALANCE_LOCK_LENGTH, SIGNATURE_LENGTH, VERIFY_KEY_LENGTH
-from thenewboston.models.created_modified import CreatedModified
+from leapchain.constants.network import BALANCE_LOCK_LENGTH, SIGNATURE_LENGTH, VERIFY_KEY_LENGTH
+from leapchain.models.created_modified import CreatedModified
 
 """
 created_date - Not stored on the network, stored by bank for reference only

@@ -1,6 +1,6 @@
 from factory import Faker
-from thenewboston.constants.network import VERIFY_KEY_LENGTH
-from thenewboston.factories.created_modified import CreatedModifiedFactory
+from leapchain.constants.network import VERIFY_KEY_LENGTH
+from leapchain.factories.created_modified import CreatedModifiedFactory
 
 from ..models.account import Account
 

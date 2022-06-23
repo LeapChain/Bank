@@ -6,11 +6,11 @@ from rest_framework import status
 from rest_framework.response import Response
 from leapchain.blocks.signatures import verify_signature
 from leapchain.constants.errors import BAD_SIGNATURE, ERROR, UNKNOWN
-from thenewboston.utils.tools import sort_and_encode
+from leapchain.utils.tools import sort_and_encode
 
 from v1.self_configurations.helpers.self_configuration import get_self_configuration
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 def is_self_signed_message(func):

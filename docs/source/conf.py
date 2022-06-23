@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.abspath('../../'))
 
 project = 'Bank'
 copyright = '2022, LeapChain'  # noqa: A001
-author = 'thenewboston-developers'
+author = 'LeapChain'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'

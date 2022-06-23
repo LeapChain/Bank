@@ -29,9 +29,9 @@ schema_view = get_schema_view(
     openapi.Info(
         title='Bank API',
         default_version='v1',
-        description='API documentation for thenewboston digital currency network Bank node.',
+        description='API documentation for leapchain digital currency network Bank node.',
         terms_of_service='https://www.google.com/policies/terms/',
-        contact=openapi.Contact(email='bucky@thenewboston.com'),
+        contact=openapi.Contact(email='contact@leapchain.com'),
         license=openapi.License(name='MIT License'),
     ),
     public=True,

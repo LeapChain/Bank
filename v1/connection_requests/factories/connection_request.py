@@ -1,6 +1,6 @@
-from thenewboston.constants.network import BANK, CONFIRMATION_VALIDATOR
-from thenewboston.factories.network_node import NetworkNodeFactory
-from thenewboston.factories.network_validator import NetworkValidatorFactory
+from leapchain.constants.network import BANK, CONFIRMATION_VALIDATOR
+from leapchain.factories.network_node import NetworkNodeFactory
+from leapchain.factories.network_validator import NetworkValidatorFactory
 
 
 class BankConnectionRequestFactory(NetworkNodeFactory):

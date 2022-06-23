@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from thenewboston.utils.fields import all_field_names
+from leapchain.utils.fields import all_field_names
 
 from v1.blocks.serializers.block import BlockSerializer
 from ..models.bank_transaction import BankTransaction
