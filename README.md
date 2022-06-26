@@ -261,22 +261,28 @@ Initialize database:
 # Create a new user (or more precisely, a role)
 sudo -u postgres createuser --interactive
 
-Enter name of role to add: thenewboston
+Enter name of role to add: leapchain
 Shall the new role be a superuser? (y/n) y
 
 # Create new database
-sudo -u postgres createdb thenewboston
+sudo -u postgres createdb leapchain
 
 # Set a password for the user
 sudo -u postgres psql template1
-ALTER USER thenewboston PASSWORD 'thenewboston';
+ALTER USER leapchain PASSWORD 'yourownpassword';
 
 # Exit prompt
 \q
 ```
-Populate database:
+Edit file with your password:
 ```
 cd /var/www/Bank/
+
+nano config/settings/base.py
+```
+
+Populate database:
+```
 python3 manage.py makemigrations && python3 manage.py migrate
 python3 manage.py createsuperuser
 python3 manage.py collectstatic
