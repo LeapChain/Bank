@@ -2,10 +2,10 @@ import logging
 
 from django.db import transaction
 from rest_framework import serializers
-from thenewboston.constants.network import BANK, PRIMARY_VALIDATOR
-from thenewboston.serializers.network_block import NetworkBlockSerializer
-from thenewboston.transactions.validation import validate_transaction_exists
-from thenewboston.utils.fields import all_field_names
+from leapchain.constants.network import BANK, PRIMARY_VALIDATOR
+from leapchain.serializers.network_block import NetworkBlockSerializer
+from leapchain.transactions.validation import validate_transaction_exists
+from leapchain.utils.fields import all_field_names
 
 from v1.self_configurations.helpers.self_configuration import get_self_configuration
 from v1.tasks.blocks import send_signed_block
@@ -13,7 +13,7 @@ from v1.utils.blocks import create_block_and_related_objects
 from v1.validators.helpers.validator_configuration import get_primary_validator
 from ..models.block import Block
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 class BlockSerializer(serializers.ModelSerializer):

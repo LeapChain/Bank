@@ -1,9 +1,9 @@
 import logging
 
 from rest_framework import serializers
-from thenewboston.constants.network import BLOCK_IDENTIFIER_LENGTH, SIGNATURE_LENGTH, VERIFY_KEY_LENGTH
-from thenewboston.serializers.network_block import NetworkBlockSerializer
-from thenewboston.utils.fields import all_field_names
+from leapchain.constants.network import BLOCK_IDENTIFIER_LENGTH, SIGNATURE_LENGTH, VERIFY_KEY_LENGTH
+from leapchain.serializers.network_block import NetworkBlockSerializer
+from leapchain.utils.fields import all_field_names
 
 from v1.blocks.models.block import Block
 from v1.tasks.sync import set_primary_validator
@@ -12,7 +12,7 @@ from v1.validators.helpers.validator_configuration import get_primary_validator
 from v1.validators.models.validator import Validator
 from ..models.invalid_block import InvalidBlock
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 class InvalidBlockSerializer(serializers.ModelSerializer):

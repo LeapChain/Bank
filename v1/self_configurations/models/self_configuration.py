@@ -1,8 +1,8 @@
 from django.core.exceptions import ValidationError
 from django.db import models
-from thenewboston.constants.network import BANK
-from thenewboston.models.network_node import NetworkNode
-from thenewboston.utils.fields import common_field_names
+from leapchain.constants.network import BANK
+from leapchain.models.network_node import NetworkNode
+from leapchain.utils.fields import common_field_names
 
 from v1.banks.models.bank import Bank
 from v1.constants.models import NODE_TYPE_CHOICES

@@ -1,17 +1,17 @@
 import logging
 
 from celery import shared_task
-from thenewboston.blocks.signatures import generate_signature
-from thenewboston.utils.format import format_address
-from thenewboston.utils.network import post
-from thenewboston.utils.tools import sort_and_encode
-from thenewboston.verify_keys.verify_key import encode_verify_key, get_verify_key
+from leapchain.blocks.signatures import generate_signature
+from leapchain.utils.format import format_address
+from leapchain.utils.network import post
+from leapchain.utils.tools import sort_and_encode
+from leapchain.verify_keys.verify_key import encode_verify_key, get_verify_key
 
 from v1.self_configurations.helpers.self_configuration import get_self_configuration
 from v1.self_configurations.helpers.signing_key import get_signing_key
 from v1.tasks.sync import set_primary_validator
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 def request_new_primary_validator():

@@ -20,8 +20,8 @@ sys.path.insert(0, os.path.abspath('../../'))
 # -- Project information -----------------------------------------------------
 
 project = 'Bank'
-copyright = '2020, thenewboston-developers'  # noqa: A001
-author = 'thenewboston-developers'
+copyright = '2022, LeapChain'  # noqa: A001
+author = 'LeapChain'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'

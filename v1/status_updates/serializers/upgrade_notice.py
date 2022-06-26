@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from thenewboston.constants.network import VERIFY_KEY_LENGTH
+from leapchain.constants.network import VERIFY_KEY_LENGTH
 
 from v1.notifications.status_updates import send_primary_validator_updated_notification
 from v1.self_configurations.helpers.self_configuration import get_self_configuration

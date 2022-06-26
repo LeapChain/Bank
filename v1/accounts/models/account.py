@@ -2,8 +2,8 @@ from uuid import uuid4
 
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
-from thenewboston.constants.network import VERIFY_KEY_LENGTH
-from thenewboston.models.created_modified import CreatedModified
+from leapchain.constants.network import VERIFY_KEY_LENGTH
+from leapchain.models.created_modified import CreatedModified
 
 
 class Account(CreatedModified):

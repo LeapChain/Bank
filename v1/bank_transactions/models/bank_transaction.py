@@ -1,5 +1,5 @@
 from django.db import models
-from thenewboston.models.network_transaction import NetworkTransaction
+from leapchain.models.network_transaction import NetworkTransaction
 
 from v1.blocks.models.block import Block
 

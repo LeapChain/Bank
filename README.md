@@ -409,4 +409,4 @@ make html
 
 ## License
 
-thenewboston is [MIT licensed](http://opensource.org/licenses/MIT).
+leapchain is [MIT licensed](http://opensource.org/licenses/MIT).

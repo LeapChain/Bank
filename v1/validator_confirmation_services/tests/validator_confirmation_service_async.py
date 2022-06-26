@@ -5,7 +5,7 @@ from asgiref.sync import sync_to_async
 from channels.testing import WebsocketCommunicator
 from rest_framework.reverse import reverse
 from rest_framework.status import HTTP_201_CREATED
-from thenewboston.utils.signed_requests import generate_signed_request
+from leapchain.utils.signed_requests import generate_signed_request
 
 from v1.notifications.constants import VALIDATOR_CONFIRMATION_SERVICE_NOTIFICATION
 from ..consumers.validator_confirmation_service import ValidatorConfirmationServiceConsumer

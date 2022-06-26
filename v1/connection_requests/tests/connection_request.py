@@ -2,10 +2,10 @@ import pytest
 from rest_framework import status
 from rest_framework.reverse import reverse
 from rest_framework.status import HTTP_400_BAD_REQUEST
-from thenewboston.constants.network import BANK, PRIMARY_VALIDATOR
-from thenewboston.third_party.factory.utils import build_json
-from thenewboston.utils.format import format_address
-from thenewboston.utils.signed_requests import generate_signed_request
+from leapchain.constants.network import BANK, PRIMARY_VALIDATOR
+from leapchain.third_party.factory.utils import build_json
+from leapchain.utils.format import format_address
+from leapchain.utils.signed_requests import generate_signed_request
 
 from ..factories.connection_request import BankConnectionRequestFactory, ValidatorConnectionRequestFactory
 from ..serializers.primary_validator_configuration import PrimaryValidatorConfigurationSerializer

@@ -1,6 +1,6 @@
 from rest_framework.reverse import reverse
 from rest_framework.status import HTTP_200_OK, HTTP_400_BAD_REQUEST
-from thenewboston.utils.signed_requests import generate_signed_request
+from leapchain.utils.signed_requests import generate_signed_request
 
 
 def set_primary_validator(client, self_configuration, signing_key, status):

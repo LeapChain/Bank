@@ -74,9 +74,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('POSTGRES_DB', 'thenewboston'),
-        'USER': os.getenv('POSTGRES_USER', 'thenewboston'),
-        'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'thenewboston'),
+        'NAME': os.getenv('POSTGRES_DB', 'leapchain'),
+        'USER': os.getenv('POSTGRES_USER', 'leapchain'),
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'leapchain'),
         'HOST': os.getenv('POSTGRES_HOST', 'localhost'),
         'PORT': os.getenv('POSTGRES_PORT', '5432')
     }
@@ -152,7 +152,7 @@ LOGGING = {
         },
     },
     'loggers': {
-        'thenewboston': {
+        'leapchain': {
             'handlers': ['error.handler', 'warning.handler'],
             'level': 'WARNING',
             'propagate': True,

@@ -1,5 +1,5 @@
 from django.db import models
-from thenewboston.models.confirmation_service import ConfirmationService
+from leapchain.models.confirmation_service import ConfirmationService
 
 from v1.validators.models.validator import Validator
 

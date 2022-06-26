@@ -1,6 +1,6 @@
 from django.db.models import Q
-from thenewboston.base_classes.fetch_primary_validator_config import FetchPrimaryValidatorConfig
-from thenewboston.utils.fields import standard_field_names
+from leapchain.base_classes.fetch_primary_validator_config import FetchPrimaryValidatorConfig
+from leapchain.utils.fields import standard_field_names
 
 from v1.connection_requests.helpers.connect import set_primary_validator
 from v1.validators.models.validator import Validator

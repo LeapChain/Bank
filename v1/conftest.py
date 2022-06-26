@@ -3,11 +3,11 @@ from django.conf import settings
 from django.core.management import call_command
 from faker import Faker
 from pytest_django.migrations import DisableMigrations
-from thenewboston.accounts.manage import create_account
-from thenewboston.blocks.block import generate_block
-from thenewboston.constants.network import BANK, PRIMARY_VALIDATOR
-from thenewboston.third_party.pytest.client import UserWrapper
-from thenewboston.verify_keys.verify_key import encode_verify_key
+from leapchain.accounts.manage import create_account
+from leapchain.blocks.block import generate_block
+from leapchain.constants.network import BANK, PRIMARY_VALIDATOR
+from leapchain.third_party.pytest.client import UserWrapper
+from leapchain.verify_keys.verify_key import encode_verify_key
 
 from v1.accounts.factories.account import AccountFactory
 from v1.self_configurations.helpers.self_configuration import get_self_configuration
@@ -144,7 +144,7 @@ def signing_key(account_data):
 @pytest.fixture(autouse=True)
 def use_fake_redis(settings):
     """Using fake Redis for running tests in parallel."""
-    settings.DJANGO_REDIS_CONNECTION_FACTORY = 'thenewboston.third_party.django_redis.pool.FakeConnectionFactory'
+    settings.DJANGO_REDIS_CONNECTION_FACTORY = 'leapchain.third_party.django_redis.pool.FakeConnectionFactory'
     settings.CACHES['default']['OPTIONS']['REDIS_CLIENT_CLASS'] = 'fakeredis.FakeStrictRedis'
 
 

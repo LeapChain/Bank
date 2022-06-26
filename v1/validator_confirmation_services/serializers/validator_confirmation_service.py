@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from thenewboston.constants.network import VERIFY_KEY_LENGTH
-from thenewboston.utils.fields import all_field_names
+from leapchain.constants.network import VERIFY_KEY_LENGTH
+from leapchain.utils.fields import all_field_names
 
 from v1.validators.models.validator import Validator
 from ..models.validator_confirmation_service import ValidatorConfirmationService

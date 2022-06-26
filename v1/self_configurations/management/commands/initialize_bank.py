@@ -1,5 +1,5 @@
-from thenewboston.base_classes.initialize_node import InitializeNode
-from thenewboston.constants.network import BANK
+from leapchain.base_classes.initialize_node import InitializeNode
+from leapchain.constants.network import BANK
 
 from v1.banks.models.bank import Bank
 from v1.self_configurations.models.self_configuration import SelfConfiguration
