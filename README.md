@@ -5,6 +5,12 @@ GitHub Issue or reach out to any of our communities above.
 
 ## Linux Ubuntu setup
 
+### Key Generation ~
+
+Before deploying server, run this script to generate all keys that will be needed later for configuration.
+
+https://gist.github.com/mrbusysky/a8963ab01cdf76c7c1cf03210eec8f50
+
 ### Install Dependencies ~
 
 Update and install packages:
