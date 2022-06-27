@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='banktransaction',
             name='memo',
-            field=models.CharField(blank=True, max_length=256),
+            field=models.CharField(blank=True, max_length=64),
         ),
     ]
